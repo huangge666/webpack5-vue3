@@ -49,7 +49,7 @@ module.exports = function (prodMode) {
 			alias: {
 				"@": path.resolve(__dirname, "../src"),
 				assets: path.resolve(__dirname, '../src/assets/'),
-				img: path.resolve(__dirname, '../src/assets/img'),
+				images: path.resolve(__dirname, '../src/assets/images'),
 				utils: path.resolve(__dirname, '../src/utils'),
 				api: path.resolve(__dirname, '../src/api'),
 			},

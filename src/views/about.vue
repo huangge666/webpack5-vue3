@@ -2,10 +2,12 @@
   <div class="about">
     <p class="title">{{ title }}</p>
     <h1>用户名:{{ user.name }}</h1>
-    <img :src="user.portrait" alt />
+    <img :src="user.portrait"
+         alt />
     <h3>token:{{ token }}</h3>
     <h3>{{$filters.formatTimers(1555851774,true)}}</h3>
-    <input type="text" value="1212" />
+    <input type="text"
+           value="1212" />
     <div class="bg">bg111111</div>
   </div>
 </template>
@@ -23,9 +25,9 @@ export default defineComponent({
     return {
       title,
       token: computed(() => store.state.token),
-      user: computed(() => store.state.user)
+      user: computed(() => store.state.user),
     };
-  }
+  },
 });
 </script>
 <style lang="scss">
@@ -56,9 +58,9 @@ h1 {
   text-align: center;
   font-size: 32px;
 }
-.bg{
+.bg {
   color: #000;
-  background-image: url(img/logo.png);
+  // background-image: url(img/logo.png);
   background-size: contain;
   font-size: 32px;
 }
